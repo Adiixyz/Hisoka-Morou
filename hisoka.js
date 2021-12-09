@@ -85,7 +85,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate) => {
 
         switch(command) {
 	    case 'sc': {
-                m.reply('Script : https://github.com/DikaArdnt/Hisoka-Morou\n\n Dont Forget Give Star\n\nDonate : https://ko-fi.com/cak_haho\n\n Dont Forget Donate')
+                m.reply('Script : cuma nyoba multi-device doank')
             }
             break
             case 'chat': {
@@ -500,12 +500,12 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'owner': case 'creator': {
                 let vcard = 'BEGIN:VCARD\n' // metadata of the contact card
                     + 'VERSION:3.0\n' 
-                    + 'N:;Dika Ardnt.;;;'
-                    + 'FN:Dika Ardnt.\n' // full name
+                    + 'N:;Adii.;;;'
+                    + 'FN:Adii.\n' // full name
                     + 'ORG:Owner Bot;\n' // the organization of the contact
-                    + 'TEL;type=CELL;type=VOICE;waid=6288292024190:+62 882-9202-4190\n' // WhatsApp ID + phone number
+                    + 'TEL;type=CELL;type=VOICE;waid=60199782326:+60199782326\n' // WhatsApp ID + phone number
                     + 'END:VCARD'
-                hisoka.sendMessage(m.chat, { contacts: { displayName: 'Dika Ardnt.', contacts: [{ vcard }] } }, { quoted: m })
+                hisoka.sendMessage(m.chat, { contacts: { displayName: 'Adii.', contacts: [{ vcard }] } }, { quoted: m })
             }
             break
             case 'eval': {
@@ -533,7 +533,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 let buttonMessage = {
                     image: {url: 'https://telegra.ph/file/bb15c9a53c4a0b68a99fa.jpg' },
                     caption: `Hello @${m.sender.split("@")[0]}`,
-                    footerText: 'Hi Im Hisoka Bot',
+                    footerText: 'Hi Im AdyyBot',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -541,84 +541,79 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case 'tes': case 'menu': case 'help': case '?': {
-                anu = `
-┌──⭓ *Group Menu*
-│
-│⭔ ${prefix}linkgroup
-│⭔ ${prefix}ephemeral [option]
-│⭔ ${prefix}setpp
-│⭔ ${prefix}setname [text]
-│⭔ ${prefix}group [option]
-│⭔ ${prefix}add @user
-│⭔ ${prefix}kick @user
-│⭔ ${prefix}promote @user
-│⭔ ${prefix}demote @user
-│
-└───────⭓
+                anu = `⌜ Main ⌟:
+*┏━──────────────*
+*┃➥ ${prefix}ping
+*┃➥ ${prefix}owner
+*┃➥ ${prefix}menu / ${prefix}help / ${prefix}?
+*┃➥ ${prefix}delete
+*┗━──────────────*
 
-┌──⭓ *Downloader Menu*
-│
-│⭔ ${prefix}tiktoknowm [url]
-│⭔ ${prefix}tiktokwm [url]
-│⭔ ${prefix}tiktokmp3 [url]
-│⭔ ${prefix}instagram [url]
-│⭔ ${prefix}twitter [url]
-│⭔ ${prefix}twittermp3 [url]
-│⭔ ${prefix}facebook [url]
-│⭔ ${prefix}pinterestdl [url]
-│
-└───────⭓
+⌜ Group ⌟:
+*┏━──────────────*
+*┃➥ ${prefix}linkgroup*
+*┃➥ ${prefix}ephemeral [option]*
+*┃➥ ${prefix}setpp*
+*┃➥ ${prefix}setname [text]*
+*┃➥ ${prefix}group [option]*
+*┃➥ ${prefix}add @user*
+*┃➥ ${prefix}kick @user*
+*┃➥ ${prefix}promote @user*
+*┃➥ ${prefix}demote @user*
+*┗━──────────────*
 
-┌──⭓ *Search Menu*
-│
-│⭔ ${prefix}pinterest [query]
-│⭔ ${prefix}wallpaper [query]
-│⭔ ${prefix}wikimedia [query]
-│⭔ ${prefix}ytsearch [query]
-│
-└───────⭓
+⌜ Downloader ⌟:
+*┏━──────────────*
+*┃➥ ${prefix}tiktoknowm [url]
+*┃➥ ${prefix}tiktokwm [url]
+*┃➥ ${prefix}tiktokmp3 [url]
+*┃➥ ${prefix}instagram [url]
+*┃➥ ${prefix}twitter [url]
+*┃➥ ${prefix}twittermp3 [url]
+*┃➥ ${prefix}facebook [url]
+*┃➥ ${prefix}pinterestdl [url]
+*┗━──────────────*
 
-┌──⭓ *Random Menu*
-│
-│⭔ ${prefix}porno
-│⭔ ${prefix}hentai
-│⭔ ${prefix}quotesanime
-│⭔ ${prefix}motivasi
-│⭔ ${prefix}dilanquote
-│⭔ ${prefix}bucinquote
-│⭔ ${prefix}katasenja
-│⭔ ${prefix}puisi
-│
-└───────⭓
+⌜ Search ⌟:
+*┏━──────────────*
+*┃➥ ${prefix}pinterest [query]
+*┃➥ ${prefix}wallpaper [query]
+*┃➥ ${prefix}wikimedia [query]
+*┃➥ ${prefix}ytsearch [query]
+*┗━──────────────*
 
-┌──⭓ *Convert Menu*
-│
-│⭔ ${prefix}toimage
-│⭔ ${prefix}sticker
-│⭔ ${prefix}tovideo
-│⭔ ${prefix}togif
-│⭔ ${prefix}tourl
-│
-└───────⭓
+⌜ Random ⌟:
+*┏━──────────────*
+*┃➥ ${prefix}porno
+*┃➥ ${prefix}hentai
+*┃➥ ${prefix}quotesanime
+*┃➥ ${prefix}motivasi
+*┃➥ ${prefix}dilanquote
+*┃➥ ${prefix}bucinquote
+*┃➥ ${prefix}katasenja
+*┃➥ ${prefix}puisi
+*┗━──────────────*
 
-┌──⭓ *Main Menu*
-│
-│⭔ ${prefix}ping
-│⭔ ${prefix}owner
-│⭔ ${prefix}menu / ${prefix}help / ${prefix}?
-│⭔ ${prefix}delete
-│
-└───────⭓
+⌜ Convert ⌟:
+*┏━──────────────*
+*┃➥ ${prefix}toimage
+*┃➥ ${prefix}sticker
+*┃➥ ${prefix}tovideo
+*┃➥ ${prefix}togif
+*┃➥ ${prefix}tourl
+*┗━──────────────*
 
-┌──⭓ *Owner Menu*
-│
-│⭔ ${prefix}chat [option]
-│⭔ ${prefix}join [link]
-│⭔ ${prefix}leave
-│⭔ ${prefix}block @user
-│⭔ ${prefix}unblock @user
-│
-└───────⭓
+⌜ Owner ⌟:
+*┏━──────────────*
+*┃➥ >
+*┃➥ $
+*┃➥ =>
+*┃➥ ${prefix}chat [option]
+*┃➥ ${prefix}join [link]
+*┃➥ ${prefix}leave
+*┃➥${prefix}block @user
+*┃➥ ${prefix}unblock @user
+*┗━──────────────*
 `
                 let message = await prepareWAMessageMedia({ image: fs.readFileSync('./lib/hisoka.jpg') }, { upload: hisoka.waUploadToServer })
                 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -628,13 +623,13 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             hydratedContentText: anu,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: 'Rest Api',
+                                    url: 'https://adii-api.herokuapp.com'
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 882-9202-4190'
+                                    displayText: 'Yntkts',
+                                    phoneNumber: '+0'
                                 }
                             }, {
                                 quickReplyButton: {

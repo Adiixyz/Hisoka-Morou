@@ -14,15 +14,15 @@ global.APIs = {
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://zenzapi.xyz': 'Your Key',
+	'https://zenzapi.xyz': '1f0c9f7504',
 }
 
 // Other
-global.owner = ['6288292024190','62882920241909','62882920241908']
-global.packname = 'Hisoka Morrow'
-global.author = '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
-global.sessionName = 'hisoka'
-global.prefa = ['','!','.','🐦','🐤','🗿']
+global.owner = ['60199782326']
+global.packname = 'ADYYBOTZ'
+global.author = '@Adiixyz'
+global.sessionName = 'Adii'
+global.prefa = ['#','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
     admin: 'Fitur Khusus Admin Group!',
